@@ -1,10 +1,8 @@
-cd ~/aquarium/
-docker restart f5f225411325
-docker restart d51c26d519ef
-docker restart 19fed89ac7f8
-docker restart 93b2f510d9c2
-docker restart 51408eb4e999
-docker restart e07c0711a146
+docker restart phishing-splashserver_splash0_1
+docker restart phishing-splashserver_splash1_1
+docker restart phishing-splashserver_splash2_1
+docker restart phishing-splashserver_splash3_1
+docker restart phishing-splashserver_splash4_1
 
 echo "restarting docker images"
 while true; do
@@ -14,11 +12,10 @@ while true; do
 	echo "waiting for 180s"
 	sleep 180
 	echo "180s is up"
-	docker restart f5f225411325
-	docker restart d51c26d519ef
-	docker restart 19fed89ac7f8
-	docker restart 93b2f510d9c2
-	docker restart 51408eb4e999
-	docker restart e07c0711a146
+	docker restart phishing-splashserver_splash0_1
+	docker restart phishing-splashserver_splash1_1
+	docker restart phishing-splashserver_splash2_1
+	docker restart phishing-splashserver_splash3_1
+	docker restart phishing-splashserver_splash4_1
 	echo "restarting docker images"
 done
