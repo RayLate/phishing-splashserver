@@ -1,23 +1,25 @@
 cd ~/aquarium/
-sudo timeout -s SIGINT 180 docker-compose up -d
-sudo docker restart f5f225411325
-sudo docker restart d51c26d519ef
-sudo docker restart 19fed89ac7f8
-sudo docker restart 93b2f510d9c2
-sudo docker restart 51408eb4e999
-sudo docker restart e07c0711a146
+timeout -s SIGINT 180 docker-compose up -d
+# docker restart 074a106f4a61
+# docker restart 6feb23e0acfa
+# docker restart 77f1b6dc27f3
+# docker restart 351abd64f799
+# docker restart 370d43cadf1a
+# docker restart bef68933a0b6
+# docker restart 096018637bc3
 while true
 do
 	sleep 5
 	echo "Starting docker service"
-	echo "waiting for 1800s"
-	sleep 1800
+	echo "waiting for 180s"
+	sleep 180
 	echo "180s is up"
-	sudo docker restart f5f225411325
-	sudo docker restart d51c26d519ef
-	sudo docker restart 19fed89ac7f8
-	sudo docker restart 93b2f510d9c2
-	sudo docker restart 51408eb4e999
-	sudo docker restart e07c0711a146
+	docker restart 074a106f4a61
+	docker restart 6feb23e0acfa
+	docker restart 77f1b6dc27f3
+	docker restart 351abd64f799
+	docker restart 370d43cadf1a
+	docker restart bef68933a0b6
+	docker restart 096018637bc3
 	echo "restarting docker images"
 done
